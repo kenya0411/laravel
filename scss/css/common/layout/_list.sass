@@ -1,0 +1,72 @@
+@charset "UTF-8"
+@import "list/_common.sass"
+@import "list/_product.sass"
+@import "list/_product_option.sass"
+@import "list/_order.sass"
+@import "list/_person.sass"
+@import "list/_reserve.sass"
+@import "list/_customer.sass"
+
+@import "../../../_import.sass"
+
+
+
+
+
+
+
+
+
+
+@include tab
+
+	.listSection
+		
+		.flexWrap
+			.tabInvi
+				display: none!important
+			
+			.mbBlock
+				display: flex
+				background-color: #fff
+				padding: 24px
+				align-items: center
+				.fa-circle-chevron-up
+					display: none
+
+				>div,>ul
+
+					
+					width: 33.33%
+				.no3
+					text-align: right
+
+		.flexWrap
+
+			.selected_mb
+				background-color: #333
+				color: #fff
+				.fa-circle-chevron-down
+					display: none
+				.fa-circle-chevron-up
+					display: block
+					color: #fff
+
+			.pcBlock
+				background-color: #eeeeee
+				border: 1px solid #ddd
+				>div
+					margin-bottom: 16px
+					padding-bottom: 16px
+					border-bottom: 1px dotted #aaa
+					&:nth-last-of-type(1)
+						border-bottom: 0
+						margin-bottom: 0
+						padding-bottom: 0
+
+				.hiddenName
+
+					font-weight: 700
+					margin-bottom: 4px
+
+

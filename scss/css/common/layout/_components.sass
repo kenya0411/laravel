@@ -1,0 +1,144 @@
+@charset "UTF-8"
+
+@import "../../../_import.sass"
+main
+	.editBtn
+		@include btn-btn($color-main,#fff)
+		width: 100%
+		max-width: initial
+	.deleteBtn
+		@include btn-btn(#aaa,#fff)
+		width: 100%
+		max-width: initial
+		
+	.searchBtn
+		@include btn-btn($color-accent,#fff)
+		width: 100%
+		height: 100%
+		max-width: initial
+	.cloneBtn
+		@include btn-btn(#000,#fff)
+		width: 100%
+		max-width: 200px
+		height: 100%
+
+	.detailBtn
+		@include btn-btn(#fff,$color-main)
+		width: 100%
+		a
+			border: 1px solid $color-main
+			color: $color-main
+			line-height: 1em
+			padding: 4px
+
+			@include tabup
+				&:hover
+					/* style */
+					color: #fff
+	.backBlock
+		margin-bottom: $mbPad
+	.backBtn
+		@include btn(#888,#fff)
+		a
+			padding: 6px 16px
+			border: 1px solid #888
+			position: relative
+			&:before
+				content: ""
+				font-family: "Font Awesome 5 Free"
+				content: '\f0d9'
+				font-weight: 700
+				margin-right: 4px
+				/* style */
+
+
+
+	.addbtnWrap,.commonBtn
+		display: flex
+	.addbtn,.commonBtn
+		@include btn(#fff,$color-main)
+		margin-right: 16px
+		a
+			border: 1px solid $color-main
+			max-width: 150px
+			padding: 8px 16px
+
+
+
+
+.searchBlock
+	margin-top: $mbPad
+	ul
+		display: flex
+		.li
+			margin-right: 8px
+	select,[type="text"]
+		width: auto
+		background-color: #fff
+		height: 36px
+		padding: 8px
+
+
+	.search_input
+		[type="text"]
+			width: 200px
+
+			&::placeholder
+				color: #949494
+				text-align: right
+
+@include tab
+
+	.searchBlock
+		ul
+			display: flex
+			flex-wrap: wrap
+			li
+				&:nth-of-type(1)
+					width: 100%
+					margin-bottom: 8px
+		
+
+.cloneBlock
+	margin-top: 50px
+	border-top: 1px solid #aaa
+	padding-top: 50px
+	
+	form
+		justify-content: flex-end
+		display: flex
+		.flex3
+			margin-right: 8px
+			display: flex
+			align-items: center
+
+		input
+			background-color: #fff
+			max-width: 70px
+
+
+.pagination
+	margin-top: 20px
+	li
+		display: flex
+		align-items: center
+		padding: 8px
+		height: 30px
+		width: 30px
+		justify-content: center
+		line-height: 1em
+		border: 1px solid #ddd
+		background-color: #fff
+		margin-right: 4px
+		@include rem(14)
+		cursor: pointer
+		@include tabup
+			&:not(.is_active)
+				&:hover
+					border: 1px solid $color-main
+					color: $color-main
+					transition-duration: 0.3s
+					/* style */
+	.is_active
+		background-color: #000
+		color: #fff

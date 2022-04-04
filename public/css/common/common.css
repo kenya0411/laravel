@@ -1,0 +1,965 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "rodinb";
+  font-display: swap;
+  src: url("/common/font/rodin-b.woff") format("woff"), url("/common/font/rodin-b.otf") format("truetype");
+}
+.listSection {
+  margin-top: 20px;
+}
+.listSection > ul {
+  width: auto;
+}
+.listSection > ul > li {
+  line-height: 1.3em;
+}
+.listSection [type="text"] {
+  height: 100%;
+}
+.listSection .flexWrap .pcBlock {
+  display: flex;
+  background-color: #fff;
+  padding: 24px;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  .listSection .flexWrap .pcBlock .hiddenName {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .listSection .flexWrap .mbBlock {
+    display: none;
+  }
+}
+.listSection .flexBodyWrap {
+  border-top: 1px solid #EFF3F6;
+}
+.listSection .editBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  text-decoration: none;
+  background: #1B8EE4;
+  text-align: center;
+  border: 1px solid #1B8EE4;
+  color: #fff;
+  transition: all 0.5s ease;
+  max-width: fit-content;
+  width: fit-content;
+  padding: 8px 12px;
+  line-height: 1em;
+  max-width: initial;
+}
+@media (min-width: 769px) {
+  .listSection .editBtn:hover {
+    background: #fff;
+    color: #1B8EE4;
+    border: 1px solid #1B8EE4;
+    box-shadow: none;
+  }
+}
+.listSection .editBtn a, .listSection .editBtn a:visited {
+  color: #fff !important;
+}
+.listSection .deleteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  text-decoration: none;
+  background: #aaa;
+  text-align: center;
+  border: 1px solid #aaa;
+  color: #fff;
+  transition: all 0.5s ease;
+  max-width: fit-content;
+  width: 100%;
+  max-width: initial;
+}
+@media (min-width: 769px) {
+  .listSection .deleteBtn:hover {
+    background: #fff;
+    color: #aaa;
+    border: 1px solid #aaa;
+    box-shadow: none;
+  }
+}
+.listSection .heading {
+  font-size: 20px;
+  font-size: 2rem;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 0.5em;
+}
+.listSection .heading:before {
+  content: "";
+  content: "";
+  border-left: 3px solid #1B8EE4;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  /* style */
+}
+.listSection .icon_wrap {
+  display: flex;
+  align-items: center;
+}
+.listSection .icon_wrap span {
+  margin-right: 4px;
+}
+.listSection .icon_wrap i {
+  position: relative;
+  top: -1px;
+}
+.listSection a, .listSection a:visited {
+  display: inline-block;
+  color: #004fc6;
+}
+.listSection a:visited, .listSection a:visited:visited {
+  color: #004fc6;
+}
+@media (min-width: 769px) {
+  .listSection a:hover, .listSection a:visited:hover {
+    color: #888;
+    transition-duration: 0.5s;
+  }
+}
+
+@media (max-width: 768px) {
+  .listSection .flexWrap .pcBlock [type="text"], .listSection .flexWrap .pcBlock textarea {
+    background-color: #fff;
+  }
+  .listSection .flexWrap .pcBlock [type="submit"] {
+    width: auto;
+  }
+}
+.productList .flexWrap .pcBlock input, .productList .flexWrap .pcBlock textarea {
+  padding: 4px 8px;
+  height: 100%;
+  width: 100%;
+}
+.productList .flexWrap .pcBlock textarea {
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .productList .flexWrap .pcBlock {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .productList .flexWrap .pcBlock > div {
+    display: flex;
+    padding-right: 12px;
+  }
+  .productList .flexWrap .pcBlock > div:nth-last-of-type(1) {
+    padding-right: 0;
+  }
+  .productList .flexWrap .pcBlock > div:nth-of-type(1) {
+    width: 15%;
+  }
+  .productList .flexWrap .pcBlock > div:nth-of-type(2) {
+    width: 15%;
+  }
+  .productList .flexWrap .pcBlock > div:nth-of-type(3) {
+    width: 10%;
+  }
+  .productList .flexWrap .pcBlock > div:nth-of-type(4) {
+    width: 15%;
+  }
+  .productList .flexWrap .pcBlock > div:nth-of-type(5) {
+    width: 29%;
+  }
+  .productList .flexWrap .pcBlock > div:nth-of-type(6) {
+    width: 8%;
+  }
+  .productList .flexWrap .pcBlock > div:nth-of-type(7) {
+    width: 8%;
+  }
+}
+
+.productOptionList .flexWrap .pcBlock input, .productOptionList .flexWrap .pcBlock textarea {
+  padding: 4px 8px;
+  height: 100%;
+  width: 100%;
+}
+.productOptionList .flexWrap .pcBlock textarea {
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .productOptionList .flexWrap .pcBlock {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .productOptionList .flexWrap .pcBlock > div {
+    display: flex;
+    padding-right: 12px;
+  }
+  .productOptionList .flexWrap .pcBlock > div:nth-last-of-type(1) {
+    padding-right: 0;
+  }
+  .productOptionList .flexWrap .pcBlock > div:nth-of-type(1) {
+    width: 15%;
+  }
+  .productOptionList .flexWrap .pcBlock > div:nth-of-type(2) {
+    width: 15%;
+  }
+  .productOptionList .flexWrap .pcBlock > div:nth-of-type(3) {
+    width: 10%;
+  }
+  .productOptionList .flexWrap .pcBlock > div:nth-of-type(4) {
+    width: 15%;
+  }
+  .productOptionList .flexWrap .pcBlock > div:nth-of-type(5) {
+    width: 29%;
+  }
+  .productOptionList .flexWrap .pcBlock > div:nth-of-type(6) {
+    width: 8%;
+  }
+  .productOptionList .flexWrap .pcBlock > div:nth-of-type(7) {
+    width: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .orderList .flexWrap .pcBlock {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .orderList .flexWrap .pcBlock > div {
+    padding-right: 12px;
+  }
+  .orderList .flexWrap .pcBlock > div:nth-last-of-type(1) {
+    padding-right: 0;
+  }
+  .orderList .flexWrap .pcBlock > div:nth-of-type(1) {
+    width: 20%;
+  }
+  .orderList .flexWrap .pcBlock > div:nth-of-type(2) {
+    width: 15%;
+  }
+  .orderList .flexWrap .pcBlock > div:nth-of-type(3) {
+    width: 15%;
+  }
+  .orderList .flexWrap .pcBlock > div:nth-of-type(4) {
+    width: 10%;
+  }
+  .orderList .flexWrap .pcBlock > div:nth-of-type(5) {
+    width: 10%;
+  }
+  .orderList .flexWrap .pcBlock > div:nth-of-type(6) {
+    width: 10%;
+  }
+  .orderList .flexWrap .pcBlock > div:nth-of-type(7) {
+    width: 10%;
+  }
+  .orderList .flexWrap .pcBlock > div:nth-of-type(8) {
+    width: 10%;
+  }
+}
+.orderList .icon_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.orderList .icon_list > li {
+  margin-left: 16px;
+}
+.orderList .icon_list > li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.orderList .icon_list button {
+  display: flex;
+  align-items: center;
+}
+
+.personList .flexWrap .pcBlock input, .personList .flexWrap .pcBlock textarea {
+  padding: 4px 8px;
+  height: 100%;
+  width: 100%;
+}
+.personList .flexWrap .pcBlock textarea {
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .personList .flexWrap .pcBlock {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .personList .flexWrap .pcBlock > div {
+    display: flex;
+    padding-right: 12px;
+  }
+  .personList .flexWrap .pcBlock > div:nth-last-of-type(1) {
+    padding-right: 0;
+  }
+  .personList .flexWrap .pcBlock > div:nth-of-type(1) {
+    width: 20%;
+  }
+  .personList .flexWrap .pcBlock > div:nth-of-type(2) {
+    width: 15%;
+  }
+  .personList .flexWrap .pcBlock > div:nth-of-type(3) {
+    width: 20%;
+  }
+  .personList .flexWrap .pcBlock > div:nth-of-type(4) {
+    width: 10%;
+  }
+  .personList .flexWrap .pcBlock > div:nth-of-type(5) {
+    width: 10%;
+  }
+  .personList .flexWrap .pcBlock > div:nth-of-type(6) {
+    width: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .personList .flexWrap .pcBlock [type="text"] {
+    background-color: #fff;
+  }
+  .personList .flexWrap .pcBlock [type="submit"] {
+    width: auto;
+  }
+}
+.reserveList .flexBodyWrap {
+  margin-bottom: 32px;
+}
+.reserveList .flexWrap .countHead {
+  background-color: #000;
+  color: #fff;
+  line-height: 1em;
+  padding: 16px 24px;
+}
+@media (max-width: 768px) {
+  .reserveList .flexWrap .pcBlock {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .reserveList .flexWrap .pcBlock .flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 {
+    position: relative;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .title {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.7em;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5:nth-of-type(1) {
+    width: 15%;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5:nth-of-type(2), .reserveList .flexWrap .pcBlock .flex .flex5:nth-of-type(3) {
+    width: 30%;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5:nth-of-type(2) textarea, .reserveList .flexWrap .pcBlock .flex .flex5:nth-of-type(3) textarea {
+    height: calc(100% - 32px);
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5:nth-of-type(4) {
+    width: 20%;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5:nth-of-type(5) {
+    width: 100%;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .flexBlock {
+    margin-bottom: 20px;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .flexBlock:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 textarea {
+    height: 100%;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 select {
+    width: 100%;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .btnFlex4 {
+    margin-left: 16px;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 .icon_wrap, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 a, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 a:visited, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 .text_wrap, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 .icon_wrap, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 a, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 a:visited, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 .text_wrap, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 .icon_wrap, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 a, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 a:visited, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 .text_wrap {
+    position: relative;
+    color: #fff;
+    background-color: #1c8ee3;
+    border: 1px solid #1c8ee3;
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 .icon_wrap:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 a:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 a:visited:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 .text_wrap:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 .icon_wrap:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 a:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 a:visited:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 .text_wrap:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 .icon_wrap:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 a:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 a:visited:hover, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 .text_wrap:hover {
+    background-color: #fff;
+    color: #1c8ee3;
+    border: 1px solid #1c8ee3;
+    transition-duration: 0.5s;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 .icon_wrap, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 .icon_wrap {
+    border-radius: 50px;
+    padding: 8px;
+    width: 45px;
+    height: 45px;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number1 i, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number2 i {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 i, .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number4 i {
+    margin-left: 4px;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number3 .text_wrap {
+    cursor: pointer;
+    padding: 12px 16px;
+    margin-left: 16px;
+  }
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number4 button {
+    position: relative;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 12px 16px;
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 769px) and (min-width: 769px) {
+  .reserveList .flexWrap .pcBlock .flex .flex5 .btnFlex .number4 button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition-duration: 0.5s;
+  }
+}
+
+.reserveList .icon_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.reserveList .icon_list > li {
+  margin-left: 16px;
+}
+.reserveList .icon_list > li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.reserveList .icon_list button {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .customerList .flexWrap .pcBlock {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .customerList .flexWrap .pcBlock > div {
+    width: 25%;
+    padding-right: 12px;
+  }
+  .customerList .flexWrap .pcBlock > div:nth-last-of-type(1) {
+    padding-right: 0;
+  }
+}
+.customerList .icon_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.customerList .icon_list > li {
+  margin-left: 16px;
+}
+.customerList .icon_list > li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.customerList .icon_list button {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .listSection .flexWrap .tabInvi {
+    display: none !important;
+  }
+  .listSection .flexWrap .mbBlock {
+    display: flex;
+    background-color: #fff;
+    padding: 24px;
+    align-items: center;
+  }
+  .listSection .flexWrap .mbBlock .fa-circle-chevron-up {
+    display: none;
+  }
+  .listSection .flexWrap .mbBlock > div, .listSection .flexWrap .mbBlock > ul {
+    width: 33.33%;
+  }
+  .listSection .flexWrap .mbBlock .no3 {
+    text-align: right;
+  }
+  .listSection .flexWrap .selected_mb {
+    background-color: #333;
+    color: #fff;
+  }
+  .listSection .flexWrap .selected_mb .fa-circle-chevron-down {
+    display: none;
+  }
+  .listSection .flexWrap .selected_mb .fa-circle-chevron-up {
+    display: block;
+    color: #fff;
+  }
+  .listSection .flexWrap .pcBlock {
+    background-color: #eeeeee;
+    border: 1px solid #ddd;
+  }
+  .listSection .flexWrap .pcBlock > div {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px dotted #aaa;
+  }
+  .listSection .flexWrap .pcBlock > div:nth-last-of-type(1) {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .listSection .flexWrap .pcBlock .hiddenName {
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+}
+.formSection [type="text"], .formSection select, .formSection [type="number"], .formSection textarea {
+  background-color: #fff;
+}
+.formSection dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.formSection dt, .formSection dd {
+  padding: 16px;
+}
+.formSection dt {
+  width: 200px;
+  border-bottom: 1px solid #1B8EE4;
+  display: flex;
+  align-items: center;
+}
+.formSection dd {
+  border-bottom: 1px solid #ddd;
+  width: calc(100% - 200px);
+}
+.formSection .btnWrap {
+  margin-top: 50px;
+}
+.formSection .sendBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  text-decoration: none;
+  background: #1B8EE4;
+  text-align: center;
+  border: 1px solid #1B8EE4;
+  color: #fff;
+  transition: all 0.5s ease;
+  max-width: fit-content;
+  margin: auto;
+  width: 200px;
+  max-width: initial;
+  padding: 16px;
+}
+@media (min-width: 769px) {
+  .formSection .sendBtn:hover {
+    background: #fff;
+    color: #1B8EE4;
+    border: 1px solid #1B8EE4;
+    box-shadow: none;
+  }
+}
+.formSection .errorMessage {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: red;
+  margin-top: 0.2em;
+}
+.formSection .inputFlex {
+  display: flex;
+  align-items: center;
+}
+.formSection .inputFlex input {
+  width: auto;
+  margin-right: 2px;
+}
+.formSection .checkBoxWrap input, .formSection .checkBoxWrap label {
+  cursor: pointer;
+}
+.formSection .dateBlock [name="date_year"] {
+  max-width: 100px;
+  margin-right: 4px;
+}
+.formSection .dateBlock [name="date_month"] {
+  max-width: 80px;
+  margin-right: 4px;
+  margin-left: 16px;
+}
+.formSection .dateBlock [name="date_day"] {
+  margin-right: 4px;
+  margin-left: 16px;
+  max-width: 80px;
+}
+
+@media (max-width: 768px) {
+  .formSection dt, .formSection dd {
+    padding: 12px 0;
+  }
+  .formSection dt {
+    width: 100%;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .formSection dd {
+    border-bottom: 1px solid #ddd;
+    width: calc(100%);
+    padding-top: 8px;
+  }
+}
+main .editBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  text-decoration: none;
+  background: #1B8EE4;
+  text-align: center;
+  border: 1px solid #1B8EE4;
+  color: #fff;
+  transition: all 0.5s ease;
+  max-width: fit-content;
+  width: 100%;
+  max-width: initial;
+}
+@media (min-width: 769px) {
+  main .editBtn:hover {
+    background: #fff;
+    color: #1B8EE4;
+    border: 1px solid #1B8EE4;
+    box-shadow: none;
+  }
+}
+main .deleteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  text-decoration: none;
+  background: #aaa;
+  text-align: center;
+  border: 1px solid #aaa;
+  color: #fff;
+  transition: all 0.5s ease;
+  max-width: fit-content;
+  width: 100%;
+  max-width: initial;
+}
+@media (min-width: 769px) {
+  main .deleteBtn:hover {
+    background: #fff;
+    color: #aaa;
+    border: 1px solid #aaa;
+    box-shadow: none;
+  }
+}
+main .searchBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  text-decoration: none;
+  background: #71BB15;
+  text-align: center;
+  border: 1px solid #71BB15;
+  color: #fff;
+  transition: all 0.5s ease;
+  max-width: fit-content;
+  width: 100%;
+  height: 100%;
+  max-width: initial;
+}
+@media (min-width: 769px) {
+  main .searchBtn:hover {
+    background: #fff;
+    color: #71BB15;
+    border: 1px solid #71BB15;
+    box-shadow: none;
+  }
+}
+main .cloneBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  text-decoration: none;
+  background: #000;
+  text-align: center;
+  border: 1px solid #000;
+  color: #fff;
+  transition: all 0.5s ease;
+  max-width: fit-content;
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+}
+@media (min-width: 769px) {
+  main .cloneBtn:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: none;
+  }
+}
+main .detailBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  text-decoration: none;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #1B8EE4;
+  transition: all 0.5s ease;
+  max-width: fit-content;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  main .detailBtn:hover {
+    background: #1B8EE4;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: none;
+  }
+}
+main .detailBtn a {
+  border: 1px solid #1B8EE4;
+  color: #1B8EE4;
+  line-height: 1em;
+  padding: 4px;
+}
+@media (min-width: 769px) {
+  main .detailBtn a:hover {
+    /* style */
+    color: #fff;
+  }
+}
+main .backBlock {
+  margin-bottom: 20px;
+}
+main .backBtn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  width: fit-content;
+  text-decoration: none;
+  background: #888;
+  text-align: center;
+  border: 1px solid #888;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+@media (min-width: 769px) {
+  main .backBtn a:hover {
+    background: #fff;
+    color: #888;
+    border: 1px solid #888;
+    box-shadow: none;
+  }
+}
+main .backBtn a {
+  padding: 6px 16px;
+  border: 1px solid #888;
+  position: relative;
+}
+main .backBtn a:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 700;
+  margin-right: 4px;
+  /* style */
+}
+main .addbtnWrap, main .commonBtn {
+  display: flex;
+}
+main .addbtn, main .commonBtn {
+  margin-right: 16px;
+}
+main .addbtn a, main .commonBtn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  width: fit-content;
+  text-decoration: none;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #1B8EE4;
+  transition: all 0.5s ease;
+}
+@media (min-width: 769px) {
+  main .addbtn a:hover, main .commonBtn a:hover {
+    background: #1B8EE4;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: none;
+  }
+}
+main .addbtn a, main .commonBtn a {
+  border: 1px solid #1B8EE4;
+  max-width: 150px;
+  padding: 8px 16px;
+}
+
+.searchBlock {
+  margin-top: 20px;
+}
+.searchBlock ul {
+  display: flex;
+}
+.searchBlock ul .li {
+  margin-right: 8px;
+}
+.searchBlock select, .searchBlock [type="text"] {
+  width: auto;
+  background-color: #fff;
+  height: 36px;
+  padding: 8px;
+}
+.searchBlock .search_input [type="text"] {
+  width: 200px;
+}
+.searchBlock .search_input [type="text"]::placeholder {
+  color: #949494;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .searchBlock ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .searchBlock ul li:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+.cloneBlock {
+  margin-top: 50px;
+  border-top: 1px solid #aaa;
+  padding-top: 50px;
+}
+.cloneBlock form {
+  justify-content: flex-end;
+  display: flex;
+}
+.cloneBlock form .flex3 {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.cloneBlock form input {
+  background-color: #fff;
+  max-width: 70px;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+.pagination li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  line-height: 1em;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-right: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  .pagination li:not(.is_active):hover {
+    border: 1px solid #1B8EE4;
+    color: #1B8EE4;
+    transition-duration: 0.3s;
+    /* style */
+  }
+}
+.pagination .is_active {
+  background-color: #000;
+  color: #fff;
+}
+
+.inner_pad {
+  padding: 8px 16px;
+}
+
+main {
+  margin-bottom: 70px;
+}
+main .strong {
+  color: #ef7520;
+  font-weight: 700;
+}
+main input, main textarea {
+  width: 100%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+  line-height: 1.5em;
+  padding: 4px 8px;
+  line-height: 1em;
+  background-color: #eee;
+}
+main select {
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+.mainHeading {
+  background-color: #fff;
+}
+.mainHeading h2 {
+  color: #000;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1em;
+}
